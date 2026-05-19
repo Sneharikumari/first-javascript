@@ -13,4 +13,3 @@ if(prime){
     console.log(i)
 }
     }
-
