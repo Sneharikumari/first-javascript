@@ -6,3 +6,5 @@ function isodd(a) {
   }
 }
 module.exports = isodd;
+
+console.log();

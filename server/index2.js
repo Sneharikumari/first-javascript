@@ -83,20 +83,15 @@ const news = require("./dataset/news");
 
 // app.listen(3000);
 
-// const express = require("express");
-// const { title } = require("node:process");
-// const app = express();
+const express = require("express");
+const { title } = require("node:process");
+const app = express();
+app.get("/news", (req, res) => {
+  const search = req.query.search?.toLowerCase() || "";
 
-// app.get("/news", (req, res) => {
-//   const search = req.query.search;
-//   if (!search) {
-//     return res.json(news);
-//   }
-//   const result = news.filter(
-//     (item) =>
-//       item.newstitle &&
-//       item.newstitle.toLowerCase().includes(search.toLocaleLowerCase()),
-//   );
-//   res.json(result);
-// });
-// app.listen(3000);
+  const results = articles.filter((article) =>
+    article.title.toLowerCase().includes(search),
+  );
+
+  res.json(results);
+});

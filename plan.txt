@@ -1,0 +1,62 @@
+| Method | Route                 | Description              |
+| ------ | --------------------- | ------------------------ |
+| GET    | `/todos`              | Get all todos            |
+| GET    | `/todos/:id`          | Get a single todo        |
+| GET    | `/todos/completed`    | Get completed todos      |
+| GET    | `/todos/pending`      | Get pending todos        |
+| POST   | `/todos`              | Create a new todo        |
+| PUT    | `/todos/:id`          | Update a todo            |
+| PATCH  | `/todos/:id/complete` | Mark a todo as completed |
+| DELETE | `/todos/:id`          | Delete a todo            |
+   
+
+
+   GET APIs (Data Fetch Karne Ke Liye)
+API
+Purpose
+GET /api/weather
+Current weather details
+GET /api/weather/forecast
+Weather forecast
+GET /api/crops
+Crop list
+GET /api/crops/{id}
+Specific crop information
+GET /api/market-prices
+Market crop prices
+GET /api/soil-report/{farmerId}
+Soil health report
+GET /api/dashboard/{farmerId}
+Dashboard data
+GET /api/alerts
+Farming alerts
+GET /api/equipment
+Available equipment rentals
+GET /api/profile/{userId}
+User profile details
+
+
+
+POST APIs (Data Save/Submit Karne Ke Liye)
+API
+Purpose
+POST /api/auth/register
+Farmer/User registration
+POST /api/auth/login
+User login
+POST /api/contact
+Contact form submission
+POST /api/crop-recommendation
+Crop recommendation request
+POST /api/soil-report
+Soil data upload
+POST /api/marketplace/product
+Crop/product listing
+POST /api/ai-assistant/query
+AI farming assistant question
+POST /api/equipment/book
+Equipment rental booking
+POST /api/alerts/subscribe
+Alert subscription
+POST /api/profile/update
+User profile update

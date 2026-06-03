@@ -14,7 +14,7 @@ app.get("/news", (req, res) => {
     filternews = searchByTerm(search, news);
   }
   if (category) {
-    filternews = searchByCategory(category, news);
+    filternews = searchByCategory(category, filternews);
   }
   if (limit) {
     filternews = filternews.slice(0, limit);
